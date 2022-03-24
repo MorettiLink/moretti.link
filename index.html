@@ -6,12 +6,14 @@
     <!-- HTTP-EQUIV -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cache-control" content="no-cache">
+    <!--<meta http-equiv="Content-Type" content="text/html; US-ASCII">-->
     <!-- VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITLE -->
     <title>Marcelo Moretti - Portfolio Web</title>
     <!-- PRECONNECT -->
     <!-- SCRIPT SRC="" ASYNC -->
+    <script async src="google-analytics.com" charset="UTF-8"></script>
     <!-- CSS THAT INCLUDES @IMPORT -->
     <!-- SYNCHRONUS JS -->
     <script src="./script/main.js"></script>
@@ -31,6 +33,7 @@
     <meta name="Content-Security-Policy" content="default-src 'self'">
     <meta name="aplication-name" content="moretti.link">
     <meta name="google-site-verification" content="#">
+    <meta name="resource-type" content="Document">
     <!--metas para investigar: msvalidate.01 - p:domain_verify - google-site-verification-->
     <!-- META Property og:url,type,title,image,locale-->
     <!-- LINKs -->
@@ -39,9 +42,46 @@
     <link rel="manifest" href="manifest.json"> <!--no se que sea, tengo que investigar-->
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <section class="logo">
+            <a href="#home">
+                <img src="#" alt="Logo principal o foto profesional">
+            </a>
+        </section>
+        <section>
+            <button class="toggle"></button>
+            <nav class="nav__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">Skills</li>
+                    <li class="menu__item">Experience</li>
+                    <li class="menu__item">References</li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <article class="content skills">
+            <section></section>
+        </article>
+        <article class="content experience">
+            <section></section>
+        </article>
+        <article class="content references">
+            <section></section>
+        </article>
+    </main>
+    <footer>
+        <section class="contact">
+            <ul class="contact__list">
+                <li class="contact__item">Linkedin</li>
+                <li class="contact__item">GitHub</li>
+                <li class="contact__item">Twitter</li>
+                <li class="contact__item">Instagram</li>
+                <li class="contact__item">Telegram</li>
+            </ul>
+            <form action="#"></form>
+        </section>
+    </footer>
     <!-- Normalmente aquí se ponen los scripts, pero yo los puse en el head-->
 </body>
 </html>
