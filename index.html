@@ -37,17 +37,18 @@
     <!--metas para investigar: msvalidate.01 - p:domain_verify - google-site-verification-->
     <!-- META Property og:url,type,title,image,locale-->
     <!-- LINKs -->
-    <link rel="shortcut icon" href="./src/img/icon/logo-moretti.svg" type="image/x-icon" sizes="16x16">
-    <link rel="shortcut icon" href="./src/img/icon/logo-moretti.svg" type="image/x-icon" sizes="32x32">
+    <link rel="shortcut icon" href="./src/img/icon/moretti.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json"> <!--no se que sea, tengo que investigar-->
 </head>
 <body>
-    <header>
+    <header class="header" id="header">
+        <!-- Icon/Home -->
         <section class="logo">
             <a href="#home">
-                <img src="#" alt="Logo principal o foto profesional">
+                <img src="#" alt="Logo principal">
             </a>
         </section>
+        <!-- Menu -->
         <section>
             <button class="toggle"></button>
             <nav class="nav__menu">
@@ -60,26 +61,113 @@
         </section>
     </header>
     <main>
-        <article class="content skills">
-            <section></section>
-        </article>
+        <!-- Presentation -->
+        <section class="presentation">
+            <h3>Hi! I'm </h3>
+            <h1>Marcelo Moretti - Electronic Technician </h1>
+            <h3>Welcome to website</h3>
+            <button>
+                <a href="#modal" class="cta">About me</a>
+            </button>
+        </section>
+        <section class="modal container" id="modal">
+            <figure>
+                <img src="#" alt="Photo about me">
+            </figure>
+            <h2 class="modal__title">About me:</h2>
+            <p class="modal__paragraph">I lived in Argenta during 29 years. Study in a Tecnician High School and work at a LED-light company</p>
+            <a href="#header" class="modal__close">Close modal</a>
+        </section>
+        <!-- Skills -->
+        <section class="content skills">
+            <table class="skill__table">
+                <tr>
+                    <th>Title1</th>
+                    <th>Title2</th>
+                    <th>Title3</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="#" alt="(description)">
+                        <label for="#">KiCad</label>
+                    </td>
+                    <td>
+                        <img src="#" alt="(icono de html)">
+                        <label for="#">HTML</label>
+                    </td>
+                    <td>
+                        <img src="#" alt="(icono de ubuntu)">
+                        <label for="#">Ubuntu</label>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <dl>
+                <dt>
+                    <img src="#" alt="CSS-icon">
+                </dt>
+                <dd>CSS-description</dd>
+            </dl>
+        </section>
+        <!-- Experiences -->
         <article class="content experience">
             <section></section>
         </article>
+        <!-- References -->
         <article class="content references">
             <section></section>
         </article>
     </main>
     <footer>
+        <!-- Contact -->
         <section class="contact">
+            <!-- Social-media -->
             <ul class="contact__list">
-                <li class="contact__item">Linkedin</li>
-                <li class="contact__item">GitHub</li>
-                <li class="contact__item">Twitter</li>
-                <li class="contact__item">Instagram</li>
-                <li class="contact__item">Telegram</li>
+                <li class="contact__item">
+                    <a href="#">
+                        <img src="#" alt="Linkedin logo">
+                        <span>Linkedin</span>
+                    </a> 
+                </li>
+                <li class="contact__item">
+                    <a href="#">
+                        <img src="#" alt="GitHub logo">
+                        <span>GitHub</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a href="#">
+                        <img src="#" alt="Twitter logo">
+                        <span>Twitter</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a href="#">
+                        <img src="#" alt="Instagram logo">
+                        <span>Instagram</span>
+                    </a>
+                </li>
+                <li class="contact__item">
+                    <a href="#">
+                        <img src="#" alt="Telegram logo">
+                        <span>Telegram</span>
+                    </a>
+                </li>
             </ul>
-            <form action="#"></form>
+            <!-- Contact Form -->
+            <form action="#" class="contact__form">
+                <h2 class="form__text">Contactame</h2>
+                <input type="text" class="form__name form__input" id="form-name" placeholder="Name:">
+                <input type="email" name="email" class="form__email form__input" id="form-email" placeholder="Email:">
+                <input type="text" class="form__message form__input form__input--message" id="form-message" placeholder="Message:">
+                <input type="submit" value="Send" class="form__send" id="form-send">
+            </form>
+        </section>
+        <!-- Copyright -->
+        <section class="copyright">
+            <h4>Made with (love) and (coffee)</h4>
+            <h4>Copyright moretti.link - Hostinger</h4>
         </section>
     </footer>
     <!-- Normalmente aquí se ponen los scripts, pero yo los puse en el head-->
