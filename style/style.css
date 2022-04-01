@@ -1,7 +1,3 @@
-header {
-  font-size: 2rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +8,98 @@ header {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #222222;
+  font-weight: lighter;
+  color: #fff;
+  height: 100vh;
 }
 
 body header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100vh;
   width: 100%;
 }
+
+body header .nav__menu {
+  border-bottom: 1px solid #222222;
+}
+
+body header .nav__menu .nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+}
+
+body header .nav__menu .nav__toggle svg {
+  width: 1rem;
+  fill: #00cc00;
+}
+
+body header .nav__menu .nav__toggle .close__icon {
+  display: none;
+  margin-top: 0.3rem;
+}
+
+body header .nav__menu .nav__toggle .menu__icon {
+  margin-top: 0.3rem;
+}
+
+body header .nav__menu .nav__checkbox {
+  display: none;
+}
+
+body header .nav__menu #nav-checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+body header .nav__menu #nav-checkbox:checked ~ label.nav__toggle .close__icon {
+  display: block;
+}
+
+body header .nav__menu #nav-checkbox:checked ~ label.nav__toggle .menu__icon {
+  display: none;
+}
+
+body header .list__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+body header .list__menu li {
+  list-style-type: none;
+  display: none;
+}
+
+body header .list__menu li :first-child {
+  margin-right: auto;
+  display: block;
+}
+
+body header .list__menu .menu__logo {
+  height: 30px;
+}
+
+body header .list__menu .menu__logo img {
+  height: 100%;
+}
+
+/*
+@mixin font-style($color-principal, $fontSize){
+    font-family: ;
+    font-size: $fontSize;
+    color: $color-principal;
+    border: ;
+
+h1 {
+    @include font-stytle($color-principal, 24px);
+*/
 /*# sourceMappingURL=style.css.map */
