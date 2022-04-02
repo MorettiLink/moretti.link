@@ -14,8 +14,19 @@ body {
 }
 
 body header {
-  height: 100vh;
+  height: 10vh;
   width: 100%;
+  background-color: gray;
+}
+
+body header .logo {
+  position: absolute;
+  display: none;
+}
+
+body header .logo svg {
+  width: 5rem;
+  height: 5rem;
 }
 
 body header .nav__menu {
@@ -23,14 +34,16 @@ body header .nav__menu {
 }
 
 body header .nav__menu .nav__toggle {
+  display: block;
   position: absolute;
   cursor: pointer;
   margin: 0 1rem;
   right: 0;
+  top: auto;
 }
 
 body header .nav__menu .nav__toggle svg {
-  width: 1rem;
+  width: 3rem;
   fill: #00cc00;
 }
 
@@ -77,6 +90,11 @@ body header .list__menu {
 body header .list__menu li {
   list-style-type: none;
   display: none;
+}
+
+body header .list__menu li a {
+  display: block;
+  padding: 15px 20px;
 }
 
 body header .list__menu li :first-child {

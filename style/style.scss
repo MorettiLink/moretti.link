@@ -17,74 +17,7 @@ body {
     color: $color-white;
     height: 100vh;
 
-    header {
-        //display: flex;
-        height: 100vh;
-        width: 100%;
-
-        .nav__menu {
-            border-bottom: 1px solid $color-dark;
-            
-            .nav__toggle {
-                position: absolute;
-                cursor: pointer;
-                margin: 0 1rem;
-                right: 0;
-    
-                svg {
-                    width: 1rem;
-                    fill: $color-principal;
-                }
-    
-                .close__icon {
-                    display: none;
-                    margin-top: 0.3rem;
-                }
-    
-                .menu__icon {
-                    margin-top: 0.3rem;
-                }
-            }
-            .nav__checkbox {
-                display: none;
-            }  
-            #nav-checkbox:checked ~ ul.nav__menu li {
-                display: block;
-            }
-            #nav-checkbox:checked ~ label.nav__toggle .close__icon {
-                display: block;
-            }
-            #nav-checkbox:checked ~ label.nav__toggle .menu__icon {
-                display: none;
-            }
-        }
-
-        .list__menu {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            align-items: center;
-            margin: 1rem;
-
-            li {
-                list-style-type: none;
-                display: none;
-
-                :first-child {
-                    margin-right: auto;
-                    display: block;
-                }
-            }
-
-            .menu__logo {
-                height: 30px;
-
-                img {
-                    height: 100%;
-                }
-            }
-        }
-    }
+    @import 'header';
 }
 
 // @mixin permite agrupar varios comandos, formando 'funciones'
