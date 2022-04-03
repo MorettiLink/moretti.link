@@ -14,26 +14,26 @@ body {
 }
 
 body header {
-  height: 10vh;
+  height: 12vh;
   width: 100%;
   background-color: gray;
 }
 
 body header .logo {
   position: absolute;
-  display: none;
+  margin: 0.5rem;
 }
 
 body header .logo svg {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
-body header .nav__menu {
-  border-bottom: 1px solid #222222;
+body header .menu__nav .checkbox__menu {
+  display: none;
 }
 
-body header .nav__menu .nav__toggle {
+body header .menu__nav .icon__menu {
   display: block;
   position: absolute;
   cursor: pointer;
@@ -42,33 +42,29 @@ body header .nav__menu .nav__toggle {
   top: auto;
 }
 
-body header .nav__menu .nav__toggle svg {
-  width: 3rem;
+body header .menu__nav .icon__menu svg {
+  width: 4rem;
   fill: #00cc00;
 }
 
-body header .nav__menu .nav__toggle .close__icon {
+body header .menu__nav .icon__menu .close__icon {
   display: none;
   margin-top: 0.3rem;
 }
 
-body header .nav__menu .nav__toggle .menu__icon {
+body header .menu__nav .icon__menu .menu__icon {
   margin-top: 0.3rem;
 }
 
-body header .nav__menu .nav__checkbox {
-  display: none;
-}
-
-body header .nav__menu #nav-checkbox:checked ~ ul.nav__menu li {
+body header .menu__nav #nav-checkbox:checked ~ ul.nav__menu li {
   display: block;
 }
 
-body header .nav__menu #nav-checkbox:checked ~ label.nav__toggle .close__icon {
+body header .menu__nav #nav-checkbox:checked ~ label.nav__toggle .close__icon {
   display: block;
 }
 
-body header .nav__menu #nav-checkbox:checked ~ label.nav__toggle .menu__icon {
+body header .menu__nav #nav-checkbox:checked ~ label.nav__toggle .menu__icon {
   display: none;
 }
 

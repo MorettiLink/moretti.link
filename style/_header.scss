@@ -1,22 +1,24 @@
 header {
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     background-color: gray;
 
     .logo {
         position: absolute;
-        display: none;
+        margin: 0.5rem;
 
         svg {
-            width: 5rem;
-            height: 5rem;
+            width: 4rem;
+            height: 4rem;
         }
     }
 
-    .nav__menu {
-        border-bottom: 1px solid $color-dark;
-        
-        .nav__toggle {
+    .menu__nav {
+        .checkbox__menu {
+            display: none;
+        }  
+
+        .icon__menu {
             display: block;
             position: absolute;
             cursor: pointer;
@@ -25,7 +27,7 @@ header {
             top: auto;
 
             svg {
-                width: 3rem;
+                width: 4rem;
                 fill: $color-principal;
             }
 
@@ -38,9 +40,6 @@ header {
                 margin-top: 0.3rem;
             }
         }
-        .nav__checkbox {
-            display: none;
-        }  
         #nav-checkbox:checked ~ ul.nav__menu li {
             display: block;
         }
