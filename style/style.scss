@@ -19,15 +19,3 @@ body {
 
     @import 'header';
 }
-
-// @mixin permite agrupar varios comandos, formando 'funciones'
-/*
-@mixin font-style($color-principal, $fontSize){
-    font-family: ;
-    font-size: $fontSize;
-    color: $color-principal;
-    border: ;
-
-h1 {
-    @include font-stytle($color-principal, 24px);
-*/

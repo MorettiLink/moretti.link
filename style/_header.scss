@@ -1,11 +1,18 @@
+@mixin menu-size($margin-icon) {
+    position: absolute;
+    top: auto;
+    cursor: pointer;
+    margin: $margin-icon;
+}
+
 header {
     height: 12vh;
     width: 100%;
     background-color: gray;
 
     .logo {
-        position: absolute;
-        margin: 0.5rem;
+        @include menu-size(0.5rem);
+        left: 0;
 
         svg {
             width: 4rem;
@@ -20,33 +27,26 @@ header {
 
         .icon__menu {
             display: block;
-            position: absolute;
-            cursor: pointer;
-            margin: 0 1rem;
+            @include menu-size(0.5rem);
             right: 0;
-            top: auto;
 
             svg {
-                width: 4rem;
+                width: 3rem;
                 fill: $color-principal;
             }
 
-            .close__icon {
+            .icon__close__menu {
                 display: none;
-                margin-top: 0.3rem;
             }
 
-            .menu__icon {
-                margin-top: 0.3rem;
-            }
         }
-        #nav-checkbox:checked ~ ul.nav__menu li {
+        #checkbox-menu:checked ~ ul.menu__nav li {
             display: block;
         }
-        #nav-checkbox:checked ~ label.nav__toggle .close__icon {
+        #checkbox-menu:checked ~ label.icon__menu .icon__close__menu {
             display: block;
         }
-        #nav-checkbox:checked ~ label.nav__toggle .menu__icon {
+        #checkbox-menu:checked ~ label.icon__menu .icon__open__menu {
             display: none;
         }
     }
