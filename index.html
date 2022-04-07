@@ -41,8 +41,7 @@
     <link rel="manifest" href="manifest.json"> <!--no se que sea, tengo que investigar-->
 </head>
 <body>
-    <header class="header" id="header">
-
+    <header>
         <!-- Icon/Home -->
         <section class="logo">
             <a href="#home">
@@ -60,29 +59,31 @@
         </section>
 
         <!-- Menu -->
-        <section class="menu">
-            <nav class="menu__nav">
-                <input type="checkbox" class="checkbox__menu" id="checkbox-menu">
-                <label for="checkbox-menu" class="icon__menu">
-                    <!-- open menu -->
-                    <svg class="icon__open__menu" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" title="bars">
-                        <path fill="#00cc00" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
-                    </svg>
-                    <!-- close menu -->
-                    <svg class="icon__close__menu" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" title="close">
-                        <path fill="#00cc00" d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/>
-                    </svg>
-                </label>
-                <ul class="list__menu">
-                    <li class="menu__item">
-                        <a href="#">Presentation</a>
-                    </li>
-                    <li class="menu__item"><a href="#">Projects</a></li>
-                    <li class="menu__item"><a href="#">Work Experience</a></li>
-                </ul>
-            </nav>
-            
-        </section>
+        <nav class="menu__nav">
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu__label">
+                <!-- open menu -->
+                <svg class="menu__icon--open" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" title="bars">
+                    <path fill="#00cc00" d="M3,8H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,8Zm18,8H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-5H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z"/>
+                </svg>
+                <!-- close menu -->
+                <svg class="menu__icon--close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" title="close">
+                    <path fill="#00cc00" d="M13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"/>
+                </svg>
+            </label>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#">About me</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Projects</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Work Experience</a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
     <main>
         <!-- About -->
@@ -103,45 +104,6 @@
             <a href="#header" class="modal__close">Close modal</a>
         </section>
         <!-- Skills -->
-        <section class="content skills">
-            <table class="skill__table">
-                <tr>
-                    <th>Title1</th>
-                    <th>Title2</th>
-                    <th>Title3</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="#" alt="(description)">
-                        <label for="#">KiCad</label>
-                    </td>
-                    <td>
-                        <img src="#" alt="(icono de html)">
-                        <label for="#">HTML</label>
-                    </td>
-                    <td>
-                        <img src="#" alt="(icono de ubuntu)">
-                        <label for="#">Ubuntu</label>
-                    </td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <dl>
-                <dt>
-                    <img src="#" alt="CSS-icon">
-                </dt>
-                <dd>CSS-description</dd>
-            </dl>
-        </section>
-        <!-- Experiences -->
-        <article class="content experience">
-            <section></section>
-        </article>
-        <!-- References -->
-        <article class="content references">
-            <section></section>
-        </article>
         
         <!-- Contact -->
         <section class="contact">

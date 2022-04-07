@@ -19,12 +19,28 @@ body header {
   background-color: gray;
 }
 
+body header menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
 body header .logo {
   position: absolute;
   top: auto;
   cursor: pointer;
   margin: 0.5rem;
   left: 0;
+}
+
+body header .logo :hover {
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 body header .logo svg {
@@ -43,6 +59,10 @@ body header .menu__nav .icon__menu {
   cursor: pointer;
   margin: 0.5rem;
   right: 0;
+}
+
+body header .menu__nav .icon__menu :hover {
+  width: 3.5rem;
 }
 
 body header .menu__nav .icon__menu svg {

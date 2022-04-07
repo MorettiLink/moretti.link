@@ -1,18 +1,16 @@
-@mixin menu-size($margin-icon) {
-    position: absolute;
-    top: auto;
-    cursor: pointer;
-    margin: $margin-icon;
-}
-
 header {
     height: 12vh;
     width: 100%;
     background-color: gray;
 
     .logo {
-        @include menu-size(0.5rem);
-        left: 0;
+        cursor: pointer;
+        margin: $margin-icon;
+
+        :hover {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
 
         svg {
             width: 4rem;
@@ -21,64 +19,54 @@ header {
     }
 
     .menu__nav {
-        .checkbox__menu {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 90%
+
+        .menu__checkbox {
             display: none;
         }  
 
-        .icon__menu {
-            display: block;
-            @include menu-size(0.5rem);
-            right: 0;
+        .menu__label {
+            margin: 0.5rem;
+            cursor: pointer;
 
             svg {
                 width: 3rem;
                 fill: $color-principal;
             }
 
-            .icon__close__menu {
+            .menu__icon--close {
                 display: none;
             }
-
-        }
-        #checkbox-menu:checked ~ ul.menu__nav li {
-            display: block;
-        }
-        #checkbox-menu:checked ~ label.icon__menu .icon__close__menu {
-            display: block;
-        }
-        #checkbox-menu:checked ~ label.icon__menu .icon__open__menu {
-            display: none;
-        }
-    }
-
-    .list__menu {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-        margin: 1rem;
-
-        li {
-            list-style-type: none;
-            display: none;
-
-            a {
-                display: block;
-                padding: 15px 20px;
-            }
-
-            :first-child {
-                margin-right: auto;
+        
+            #checkbox-menu:checked ~ ul.menu__nav li {
                 display: block;
             }
+            #checkbox-menu:checked ~ label.icon__menu .icon__close__menu {
+                display: block;
+            }
+            #checkbox-menu:checked ~ label.icon__menu .icon__open__menu {
+                display: none;
+            }
         }
 
-        .menu__logo {
-            height: 30px;
+        .list__menu {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
 
-            img {
-                height: 100%;
-            }
+            li {
+                list-style-type: none;
+                display: none;
+
+                a {
+                        display: block;
+                        padding: 15px 20px;
+                }
+
+        }
         }
     }
 }
