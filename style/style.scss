@@ -3,6 +3,7 @@ $color-principal: #00cc00;
 $color-dark: #222222;
 $color-white: #fff;
 $font-principal: Verdana, Geneva, Tahoma, sans-serif;
+$font-size: 5rem;
 
 * {
     margin: 0;
@@ -13,10 +14,15 @@ $font-principal: Verdana, Geneva, Tahoma, sans-serif;
 body {
     height: 100vh;
     width: 100%;
-    font-family: $font-principal;
+    scroll-behavior: smooth;
     background-color: $color-dark;
-    font-weight: lighter;
-    color: $color-white;
+    //font: style variant weight stretch size line-height family caption icon menu
+    font: italic bold 1rem 1.2 $font-principal;
+
+    svg {
+        max-width: 100%;
+        height: auto;
+    }
 
     @import 'header';
 }
