@@ -1,32 +1,34 @@
 header {
     position: sticky;
-    max-height: 6rem;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
 
-    .logo {
-        position: absolute;
-        cursor: pointer;
-        margin: 0.5rem;
-
-        svg {
-            width: 4rem;
-            height: 4rem;
-        }
+    svg {
+        max-width: 69px;
+        max-height: 69px;
     }
 
-    .manu__nav {
-        position: absolute;
-        margin: 0.5rem;
+    .logo {
+        position: relative;
         cursor: pointer;
+        margin: auto 1rem;
+    }
 
-        svg {
-            width: 4rem;
-            height: 4rem;
-        }
+    nav {
+        position: relative;
+        margin: auto 1rem;
+        cursor: pointer;
+    }
 
-        .menu__list {
-            list-style: none;
-        }
+    .menu__checkbox {
+        display: none;
+    }
+
+    .other__button {
+        display: none;
     }
 }
 
