@@ -30,6 +30,7 @@
     <meta name="googlebot" content="index, follow">
     <meta name="author" content="Marcelo Moretti">
     <meta name="copyright" content="Marcelo Moretti">
+    <meta name="rating" content="general">
     <meta name="Content-Security-Policy" content="default-src 'self'">
     <meta name="aplication-name" content="moretti.link">
     <meta name="google-site-verification" content="#">
@@ -41,7 +42,7 @@
     <link rel="manifest" href="manifest.json"> <!--no se que sea, tengo que investigar-->
 </head>
 <body>
-    <header>
+    <header class="header" id="header">
         <!-- Logo-Icon/Home -->
         <picture class="logo">
             <a href="#home">
@@ -158,10 +159,12 @@
     <footer>
         <!-- Copyright -->
         <section class="copyright">
-            <h4>Made with (love) and (coffee)</h4>
-            <h4>Copyright moretti.link - Hostinger</h4>
+            <p>Made with <span class="footer__span">💚</span> and a lot of <span class="footer__span">☕</span></p>
+            <h5>Copyright moretti.link - Hostinger</h5>
+            <button type="button">
+                <a href="#header">back to the top</a>
+            </button>
         </section>
     </footer>
-    <!-- Normalmente aquí se ponen los scripts, pero yo los puse en el head-->
 </body>
 </html>

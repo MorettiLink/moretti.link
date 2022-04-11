@@ -1,6 +1,7 @@
 header {
     position: sticky;
     background-color: gray;
+    border: 2px solid tomato;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,6 +30,30 @@ header {
 
     .other__button {
         display: none;
+    }
+
+    .menu__nav {
+        .menu__icon__close {
+            display: none;
+        }
+
+        .manu__list {
+            display: none;
+        }
+
+        :checked {
+            .menu__icon__close {
+                display: inline-block;
+            }
+    
+            .manu__list {
+                display: inline-block;
+            }
+
+            .menu__icon__open {
+                display: none;
+            }
+        }
     }
 }
 
