@@ -1,5 +1,5 @@
 # moretti.link
-My personal website
+My personal website was made with semantic HTML, CSS (BEM), SASS, Javascript, GIT, NPM, JSON, etc
 
 First i draw a diagram of the extructure
 

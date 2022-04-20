@@ -8,21 +8,17 @@ $font-principal: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     scroll-behavior: smooth;
     background-color: $color-dark;
     line-height: 1.6;
     font-size: 10rem;
     font-family: $font-principal;
-
-    ul {
-        list-style: none;
-    }
 
     @import 'header';
 
