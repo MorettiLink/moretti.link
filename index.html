@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 <head>
     <!-- CHARSET -->    
     <meta charset="UTF-8">
@@ -8,11 +8,12 @@
     <meta http-equiv="cache-control" content="no-cache">
     <!--<meta http-equiv="Content-Type" content="text/html; US-ASCII">-->
     <!-- VIEWPORT -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
     <!-- TITLE -->
     <title>Marcelo Moretti - Portfolio Web</title>
     <!-- PRECONNECT -->
-    <!-- SCRIPT SRC="" ASYNC -->
+    <!-- SCRIPT ASYNC SRC="" -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script> <!--AMP-->
     <script async src="google-analytics.com" charset="UTF-8"></script>
     <!-- CSS THAT INCLUDES @IMPORT -->
     <!-- SYNCHRONUS JS -->
@@ -40,7 +41,71 @@
     <!-- META Property og:url,type,title,image,locale-->
     <!-- LINKs -->
     <link rel="shortcut icon" href="./src/img/icon/moretti.ico" type="image/x-icon">
+    <link rel="canonical" href="moretti.link"> <!--AMP-->
     <link rel="manifest" href="manifest.json"> <!--no se que sea, tengo que investigar-->
+    <style amp-boilerplate>
+    body{
+        -webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+        animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+        @-webkit-keyframes 
+        -amp-start{
+            from{
+                visibility:hidden
+            }
+            to{
+                visibility:visible
+            }
+        }
+        @-moz-keyframes 
+        -amp-start{
+            from{
+                visibility:hidden
+            }
+            to{
+                visibility:visible
+            }
+        }
+        @-ms-keyframes 
+        -amp-start{
+            from{
+                visibility:hidden
+            }
+            to{
+                visibility:visible
+            }
+        }
+        @-o-keyframes 
+        -amp-start{
+            from{
+                visibility:hidden
+            }
+            to{
+                visibility:visible
+            }
+        }
+        @keyframes 
+        -amp-start{
+            from{
+                visibility:hidden
+            }
+            to{
+                visibility:visible
+            }
+        }
+    </style> <!--AMP-->
+    <noscript>
+        <style amp-boilerplate>
+            body{
+                -webkit-animation:none;
+                -moz-animation:none;
+                -ms-animation:none;
+                animation:none
+            }
+        </style>
+    </noscript>
+
 </head>
 <body>
     <header class="header" id="header">
