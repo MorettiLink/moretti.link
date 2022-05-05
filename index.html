@@ -146,7 +146,10 @@
                     <a href="#">Projects</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#">Work Experience</a>
+                    <a href="#">Education</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">Contact</a>
                 </li>
             </ul>
             <button type="button" class="other__button">
@@ -154,6 +157,21 @@
                 <span class="br2">__</span>
                 <span class="br3">__</span>
             </button>
+
+            <!-- <select name="menu" id="">
+                <option value="About">About me</option>
+                <option value="Projects">Projects</option>
+                <option value="Education">Education</option>
+                <option value="Contact">Contact</option>
+            </select> -->
+
+            <input list="menu__input">
+            <datalist id="menu__input">
+                <option value="About"></option>
+                <option value="Projects"></option>
+                <option value="Education"></option>
+                <option value="Contact"></option>
+            </datalist>
         </nav>
 
     </header>
@@ -175,8 +193,14 @@
             <p class="modal__paragraph">I lived in Argenta during 29 years. Study in a Tecnician High School and work at a LED-light company</p>
             <a href="#header" class="modal__close">Close modal</a>
         </section>
-        <!-- Skills -->
-        
+        <!-- Projects -->
+        <section class="projects">
+            <h3 class="project__title">This are my projects:</h3>
+        </section>
+        <!-- Education -->
+        <section class="education">
+            <h3 class="education__title">My education is here:</h3>
+        </section>
         <!-- Contact -->
         <section class="contact">
             <!-- Social-media -->
@@ -215,9 +239,18 @@
             <!-- Contact Form -->
             <form action="#" class="contact__form">
                 <h2 class="form__text">Contactame</h2>
-                <input type="text" class="form__name form__input" id="form-name" placeholder="Name:">
-                <input type="email" name="email" class="form__email form__input" id="form-email" placeholder="Email:">
-                <input type="text" class="form__message form__input form__input--message" id="form-message" placeholder="Message:">
+                <label for="name">
+                    <span>¿What's your name?</span>
+                    <input type="text" name="name" class="form__name form__input" id="form-name" placeholder="Name:" autocomplete="name" required>
+                </label>
+                <label for="email">
+                    <span>¿What's your email?</span>
+                    <input type="email" name="email" class="form__email form__input" id="form-email" placeholder="Email:" autocomplete="email" required>
+                </label>
+                <label for="message">
+                    <span>Tell me something</span>
+                    <input type="text" name="message" class="form__message form__input form__input--message" id="form-message" placeholder="Message:" required>
+                </label>
                 <input type="submit" value="Send" class="form__send" id="form-send">
             </form>
         </section>

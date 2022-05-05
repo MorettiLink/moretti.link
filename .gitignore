@@ -2,6 +2,8 @@
 *.png
 *.ico
 *.txt
+*.webp
+*.pdf
 
 node_modules/normalize.css/CHANGELOG.md 
 node_modules/normalize.css/LICENSE.md 
