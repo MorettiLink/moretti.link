@@ -20,6 +20,12 @@ body {
     font-size: 10rem;
     font-family: $font-principal;
 
+    section {
+        max-width: 800px;
+        border: 2px solid green;
+        height: 100px;
+    }
+
     @import 'header';
 
     @import 'footer';

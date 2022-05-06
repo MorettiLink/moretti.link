@@ -1,11 +1,19 @@
 header {
-    position: sticky;
     background-color: gray;
     border: 2px solid tomato;
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 10vh;
+
+    #theme {
+        border: 3px solid blue;
+        width: 25px;
+        height: 25px;
+        :checked {
+            filter: invert(1);
+        }
+    }
 
     svg {
         max-width: 69px;

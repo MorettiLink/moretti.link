@@ -16,9 +16,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body section {
+  max-width: 800px;
+  border: 2px solid green;
+  height: 100px;
+}
+
 body header {
-  position: -webkit-sticky;
-  position: sticky;
   background-color: gray;
   border: 2px solid tomato;
   display: -webkit-box;
@@ -31,6 +35,17 @@ body header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 10vh;
+}
+
+body header #theme {
+  border: 3px solid blue;
+  width: 25px;
+  height: 25px;
+}
+
+body header #theme :checked {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 body header svg {
