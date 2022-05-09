@@ -12,6 +12,10 @@ body {
   scroll-behavior: smooth;
   background-color: #222222;
   line-height: 1.6;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body section {

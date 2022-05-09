@@ -17,6 +17,7 @@ body {
     scroll-behavior: smooth;
     background-color: $color-dark;
     line-height: 1.6;
+    user-select: none;
 
     section {
         max-width: 800px;
